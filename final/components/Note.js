@@ -68,7 +68,7 @@ const Note = ({ note }) => {
         )}
       </MetaData>
       {/*<ReactMarkdown source={note.content} />*/}
-      <NoteContents>{note-content}</NoteContents>
+      <NoteContents>{note.content}</NoteContents>
     </StyledNote>
   );
 };
