@@ -31,6 +31,11 @@ const UserActions = styled.div`
   margin-left: auto;
 `;
 
+const NoteContents = styled.pre`
+  font-size: 17px;
+  background-color: #efefef;
+`;
+
 const Note = ({ note }) => {
   const { loading, error, data } = useQuery(IS_LOGGED_IN);
   // if the data is loading, display a loading message
@@ -62,7 +67,8 @@ const Note = ({ note }) => {
           </UserActions>
         )}
       </MetaData>
-      <ReactMarkdown source={note.content} />
+      {/*<ReactMarkdown source={note.content} />*/}
+      <NoteContents>{note-content}</NoteContents>
     </StyledNote>
   );
 };
